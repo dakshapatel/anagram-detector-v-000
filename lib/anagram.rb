@@ -10,10 +10,8 @@ def initialize(word)
 end
 
 def match(arr)#<= takes an array of possible anagrams
-
-
-  arr.keep_if do |str|
+    arr.keep_if do |str|
     word.split('').sort == str.split('').sort
-
-end
+    end
+  end
 end
